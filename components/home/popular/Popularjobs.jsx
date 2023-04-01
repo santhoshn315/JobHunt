@@ -14,6 +14,7 @@ import { COLORS, SIZES, SIZESi } from "../../../constants";
 import PopularjobCard from "../../common/cards/popular/PopularJobCard";
 import { useFetch } from "../../../hook/useFetch";
 import axios from "axios";
+import apiKey from "../../../constants/apiKey";
 
 const Popularjobs = () => {
   const router = useRouter();
@@ -30,7 +31,7 @@ const Popularjobs = () => {
       num_pages: "1",
     },
     headers: {
-      "X-RapidAPI-Key": "fe813e6bc3msha43599271fec68fp10c2acjsnc97565a61526",
+      "X-RapidAPI-Key": apiKey,
       "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
     },
   };

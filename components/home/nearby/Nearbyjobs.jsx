@@ -7,7 +7,7 @@ import { useRouter } from "expo-router";
 import { COLORS } from "../../../constants";
 import NearbyJobCard from "../../common/cards/nearby/NearbyJobCard";
 import axios from "axios";
-
+import apiKey from "../../../constants/apiKey";
 const Nearbyjobs = () => {
   const router = useRouter();
   const [data, setData] = useState([]);
@@ -23,7 +23,7 @@ const Nearbyjobs = () => {
       num_pages: "1",
     },
     headers: {
-      "X-RapidAPI-Key": "fe813e6bc3msha43599271fec68fp10c2acjsnc97565a61526",
+      "X-RapidAPI-Key": apiKey,
       "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
     },
   };
