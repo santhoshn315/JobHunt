@@ -54,6 +54,11 @@ const styles = StyleSheet.create({
     fontFamily: FONT.regular,
     color: "#B3AEC6",
   },
+  jobType: {
+    fontSize: SIZES.medium - 3,
+    fontFamily: FONT.regular,
+    color: "#B3AEC6",
+  },
 });
 
 export default styles;
