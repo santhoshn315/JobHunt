@@ -1,14 +1,13 @@
 import { View, ScrollView, SafeAreaView } from "react-native";
 import { useState } from "react";
 import { Stack, useRouter } from "expo-router";
-import { COLORS, icons, images, SIZES } from "../constants";
+import { COLORS, icons, images, SIZES, FONT } from "../constants";
 import {
   Nearbyjobs,
   Popularjobs,
   ScreenHeaderBtn,
   Welcome,
 } from "../components";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Home = () => {
   const router = useRouter();
@@ -17,12 +16,17 @@ const Home = () => {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: COLORS.lightWhite,
+        backgroundColor: COLORS.gray2,
       }}
     >
       <Stack.Screen
         options={{
-          headerStyle: { backgroundColor: COLORS.lightWhite },
+          headerStyle: { backgroundColor: COLORS.gray2 },
+          headerTitleStyle: {
+            fontFamily: FONT.bold,
+            fontSize: SIZES.xLarge,
+            color: COLORS.primary,
+          },
           headerShadowVisible: false,
           headerLeft: () => (
             <ScreenHeaderBtn
@@ -36,7 +40,7 @@ const Home = () => {
               dimension="60%"
             ></ScreenHeaderBtn>
           ),
-          headerTitle: "",
+          headerTitle: "Job Hunt",
         }}
       ></Stack.Screen>
       <ScrollView showsVerticalScrollIndicator={false}>
