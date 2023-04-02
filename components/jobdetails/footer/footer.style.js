@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 import { COLORS, FONT, SIZES } from "../../../constants";
+import { sin } from "react-native-reanimated";
 
 const styles = StyleSheet.create({
   container: {
@@ -30,7 +31,8 @@ const styles = StyleSheet.create({
   },
   applyBtn: {
     flex: 1,
-    backgroundColor: "#FE7654",
+    height: 55,
+    backgroundColor: COLORS.primary,
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
@@ -38,6 +40,7 @@ const styles = StyleSheet.create({
     borderRadius: SIZES.medium,
   },
   applyBtnText: {
+    padding: SIZES.medium,
     fontSize: SIZES.medium,
     color: COLORS.white,
     fontFamily: FONT.bold,

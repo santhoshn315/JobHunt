@@ -7,7 +7,7 @@ import { useRouter } from "expo-router";
 import { COLORS } from "../../../constants";
 import NearbyJobCard from "../../common/cards/nearby/NearbyJobCard";
 import axios from "axios";
-import apiKey from "../../../constants/apiKey";
+import apiKey from "../../../constants/apikey";
 const Nearbyjobs = () => {
   const router = useRouter();
   const [data, setData] = useState([]);
@@ -18,7 +18,7 @@ const Nearbyjobs = () => {
     method: "GET",
     url: "https://jsearch.p.rapidapi.com/search",
     params: {
-      query: "Python developer in Texas, USA",
+      query: "Javascript",
       page: "1",
       num_pages: "1",
     },

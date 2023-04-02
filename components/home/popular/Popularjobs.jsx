@@ -14,7 +14,7 @@ import { COLORS, SIZES, SIZESi } from "../../../constants";
 import PopularjobCard from "../../common/cards/popular/PopularJobCard";
 import { useFetch } from "../../../hook/useFetch";
 import axios from "axios";
-import apiKey from "../../../constants/apiKey";
+import apiKey from "../../../constants/apikey";
 
 const Popularjobs = () => {
   const router = useRouter();
